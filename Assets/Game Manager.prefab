@@ -1,0 +1,337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5653512141920128987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166571022100248088}
+  - component: {fileID: 3369624856816169696}
+  - component: {fileID: 3770279225094127646}
+  - component: {fileID: 1138571218163464918}
+  - component: {fileID: 3722529687394416348}
+  - component: {fileID: 5004748309479487776}
+  - component: {fileID: 4843852374168180543}
+  - component: {fileID: 7829510815912619478}
+  - component: {fileID: 5053355403089865699}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166571022100248088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.08557, y: 4.74, z: 0.22764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3369624856816169696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74d629ee8f6c9846ac3caf7c9cc5f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkThrowController
+  drinkPrefabs:
+  - {fileID: 7579046046495164967, guid: 2b032a0c9ef2e0c49ae76bc047230a5a, type: 3}
+  - {fileID: 931631161259074197, guid: 9ae6434c1375fc845a0604316c0ee945, type: 3}
+  - {fileID: 8536137733322914956, guid: 1aaf017026b666e44a5cb094ce96f0b2, type: 3}
+  - {fileID: 943293801412971110, guid: ce642e3ba7ab7e646803b3d31ccca29a, type: 3}
+  - {fileID: 1061306530775503875, guid: 94ea1080b2229c343a825f42e8868283, type: 3}
+  - {fileID: 1422985409811605658, guid: 3b5eae4334f99ee40915cd80da75d0cc, type: 3}
+  orderSpriteDatabase: {fileID: 11400000, guid: 45ef933cb73fa4945b804ec4787d0ea1, type: 2}
+  spawnPoint: {fileID: 0}
+  trajectorySpawnPoint: {fileID: 0}
+  maxThrowForce: 10
+  minThrowForce: 5
+  dragMultiplier: 0.015
+  swipeThreshold: 100
+  maxThrowAngle: 90
+  leftDrinkIcon: {fileID: 0}
+  rightDrinkIcon: {fileID: 0}
+  powerBar: {fileID: 0}
+  leftButton: {fileID: 0}
+  rightButton: {fileID: 0}
+  lowPowerColor: {r: 0.2, g: 1, b: 0.2, a: 1}
+  midPowerColor: {r: 1, g: 0.9, b: 0.1, a: 1}
+  highPowerColor: {r: 1, g: 0.3, b: 0.1, a: 1}
+  colorLerpSpeed: 8
+  shakeAmplitude: 10
+  shakeFrequency: 20
+  maxScaleBump: 1.15
+  trajectoryDotPrefab: {fileID: 4643926207241935821, guid: 15cefc98eee073e4597796b9506430ca, type: 3}
+  trajectoryDotCount: 20
+  dotSpacing: 0.08
+--- !u!120 &3770279225094127646
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -3963241562183589234, guid: 814f85cf2f8cdbf428e582955b2fad61, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: -1
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
+--- !u!114 &1138571218163464918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5546bca05c128d24e9778db9f0f5c568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomerSpawner
+  customerPrefabs:
+  - {fileID: 6383198127656934645, guid: 898ca453918bc2b4495e5eca84827aff, type: 3}
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  exitPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  seatPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  waveDelay: 5
+  customerSpawnInterval: 0.5
+  autoSpawn: 1
+  waveCountRange: {x: 2, y: 8}
+  counterSpawnChance: 0.2
+  mainCamera: {fileID: 0}
+--- !u!114 &3722529687394416348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4815cc75ec1554e80c7ad96e0e0406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrderUIManager
+  orderUIPrefab: {fileID: 6558194144762896751, guid: 38b759d8682de3d4681f53b5d849523c, type: 3}
+--- !u!114 &5004748309479487776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db069c0530c73cf4a892d684d846b173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrderSystemInitializer
+  database: {fileID: 11400000, guid: 45ef933cb73fa4945b804ec4787d0ea1, type: 2}
+--- !u!114 &4843852374168180543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee6c05ba21433c4faa3b95f699aaf7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CanvasSwitcher
+  mainMenuCanvas: {fileID: 0}
+  gameplayCanvas: {fileID: 0}
+--- !u!114 &7829510815912619478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0297770c6377d9242900aca718c06a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioSettingsManager
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  musicSource: {fileID: 0}
+  sfxSources: []
+--- !u!114 &5053355403089865699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653512141920128987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb06ed0b81ce572418163146b20cfc67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  mainMenuCanvas: {fileID: 0}
+  gameplayCanvas: {fileID: 0}
+  endGamePanel: {fileID: 0}
+  heartImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  heartFull: {fileID: 21300000, guid: 26e173fbfe89a144cb31d8a7dacb1ac3, type: 3}
+  heartEmpty: {fileID: 21300000, guid: 4adf2c0ac0e946b48a99a9a70585138d, type: 3}
+  timeText: {fileID: 0}
+  moneyEarnedText: {fileID: 0}
+  moneyText: {fileID: 0}
+  panelConfigs:
+  - panelName: Setting Panel
+    panelObject: {fileID: 0}
+    openButton: {fileID: 0}
+    closeButton: {fileID: 0}
+    pauseOnOpen: 0
+    unpauseOnClose: 0
+  - panelName: Shop Panel
+    panelObject: {fileID: 0}
+    openButton: {fileID: 0}
+    closeButton: {fileID: 0}
+    pauseOnOpen: 0
+    unpauseOnClose: 0
+  - panelName: Setting Game Panel
+    panelObject: {fileID: 0}
+    openButton: {fileID: 0}
+    closeButton: {fileID: 0}
+    pauseOnOpen: 1
+    unpauseOnClose: 1
