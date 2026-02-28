@@ -1,11 +1,12 @@
 # 🍹 Pass The Beer -3D Mobile Game
 
 Welcome to **Pass The Beer** – a fast‑paced and hilarious game where you serve customers by tossing drinks straight into their hands. Accuracy, timing, and skill are the keys to keeping your patrons happy and your pockets full!
-
+![Gameplay Screenshot](https://github.com/Latu0312/Pass-The-Beer/blob/main/Background.png)
 ---
 
 ## 🎮 Game Features
-
+![Gameplay Screenshot](https://github.com/Latu0312/Pass-The-Beer/blob/main/Gameplay1.png)
+![Gameplay Screenshot](https://github.com/Latu0312/Pass-The-Beer/blob/main/Gameplay2.png)
 - **Unique Gameplay**: Serve customers by throwing drinks across the bar.  
 - **Six Drink Types**:  
   - Beer  
@@ -22,7 +23,7 @@ Welcome to **Pass The Beer** – a fast‑paced and hilarious game where you ser
 - **Humor & Chaos**: Watch customers react as drinks fly their way!  
 
 ---
-
+![Gameplay Screenshot](https://github.com/Latu0312/Pass-The-Beer/blob/main/Shop.png)
 ## 🚀 How to Play
 
 1. Aim carefully and throw the right drink to the right customer.  
